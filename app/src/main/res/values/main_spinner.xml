@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mainSpinnerItems">
+        <item id="0">News</item>
+        <item id="1">Deals</item>
+        <item id="2">Xbox</item>
+        <item id="3">PS4</item>
+    </string-array>
+</resources>

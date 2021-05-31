@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigationHome"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/homeMenuTitle" />
+        <item
+            android:id="@+id/navigationNew"
+            android:icon="@drawable/ic_baseline_new_releases_24"
+            android:title="@string/newMenuTitle" />
+        <item
+            android:id="@+id/navigationDiscounts"
+            android:icon="@drawable/ic_baseline_remove_red_eye_24"
+            android:title="@string/discountsMenuTitle" />
+        <item
+            android:id="@+id/navigationXbox"
+            android:icon="@drawable/ic_xbox"
+            android:title="@string/xboxMenuTitle" />
+        <item
+            android:id="@+id/navigationPs4"
+            android:icon="@drawable/ic_playstation"
+            android:title="@string/ps4MenuTitle" />
+        <item
+            android:id="@+id/navigationCart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="@string/cartMenuTitle" />
+    </group>
+    <item android:title="@string/supportMenuTitle">
+        <menu>
+            <item
+                android:id="@+id/navigationContact"
+                android:icon="@drawable/ic_baseline_local_phone_24"
+                android:title="@string/contactMenuTitle" />
+            <item
+                android:id="@+id/navigationDirections"
+                android:icon="@drawable/ic_baseline_not_listed_location_24"
+                android:title="@string/directionsMenuTitle" />
+        </menu>
+    </item>
+</menu>

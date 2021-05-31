@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Practica2</string>
+    <string name="add">Add</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">Share</string>
+    <string name="add_element">Add new item</string>
+    <string name="welcome">Welcome!</string>
+    <string name="app_web">www.example.com</string>
+    <string name="supportMenuTitle">Support</string>
+    <string name="contactMenuTitle">Contact</string>
+    <string name="newMenuTitle">New</string>
+    <string name="homeMenuTitle">Home</string>
+    <string name="discountsMenuTitle">Deals</string>
+    <string name="xboxMenuTitle">Xbox</string>
+    <string name="ps4MenuTitle">PS4</string>
+    <string name="cartMenuTitle">Shopping cart</string>
+    <string name="directionsMenuTitle">Find us</string>
+    <string name="title_cart">Shopping cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="detail">Game details</string>
+    <string name="total">"Order total: "</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="patment_method">Payment Method</string>
+    <string name="mastercard">MasterCard</string>
+    <string name="visa">Visa</string>
+    <string name="order">Order items</string>
+    <string name="no_items">Shopping cart is empty</string>
+    <string name="form_incomplete">Some fields are empty</string>
+    <string name="directions">Find us</string>
+    <string name="contact">Contact form</string>
+    <string name="contact_options_text">Select an option:</string>
+    <string name="contact_form">Contact</string>
+    <string name="support_form">Order support</string>
+    <string name="next">Next</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="invoice_number">Invoice number</string>
+    <string name="image">Image</string>
+    <string name="image_option">Select image option</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="error">Error</string>
+</resources>
