@@ -75,11 +75,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private int getRandomId(){
         double randomN = Math.random();
-        return (randomN <= 0.33) ?
-                R.drawable.ic_launcher_background :(
-                (randomN <= 0.66) ?
-                R.drawable.ic_launcher_foreground :
-                R.drawable.megadrive);
+        return (randomN <= 0.5) ?
+                R.drawable.cover1 :
+                R.drawable.cover2;
+
     }
 
     public static void addGame (SQLiteDatabase db, String name, String console, float price, float originalPrice,

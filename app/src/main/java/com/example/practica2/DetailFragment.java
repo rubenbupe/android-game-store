@@ -1,7 +1,9 @@
 package com.example.practica2;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.Cursor;
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,15 +17,20 @@ import android.widget.TextView;
 
 import com.example.practica2.Utils.DatabaseHelper;
 
+import java.text.DecimalFormat;
+
 public class DetailFragment extends Fragment {
 
     private Cursor cursor;
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onStart() {
         super.onStart();
 
         View v = getView();
+
+        DecimalFormat format = new DecimalFormat("#.##");
 
         if(v != null){
             ((ImageView)v.findViewById(R.id.gameImage)).setImageResource(
@@ -36,10 +43,13 @@ public class DetailFragment extends Fragment {
                     cursor.getString(DatabaseHelper.GameTable.CONSOLE));
 
             ((TextView)v.findViewById(R.id.gameOriginalPrice)).setText(
-                    String.valueOf(cursor.getDouble(DatabaseHelper.GameTable.ORIGINAL_PRICE)));
+                    format.format(cursor.getDouble(
+                            DatabaseHelper.GameTable.ORIGINAL_PRICE)) +
+                            getResources().getString(R.string.currency));
 
             ((TextView)v.findViewById(R.id.gamePrice)).setText(
-                    String.valueOf(cursor.getDouble(DatabaseHelper.GameTable.PRICE)));
+                    format.format(cursor.getDouble(DatabaseHelper.GameTable.PRICE)) +
+                    getResources().getString(R.string.currency));
 
             ((TextView)v.findViewById(R.id.gameDate)).setText(
                     cursor.getString(DatabaseHelper.GameTable.DATE));
@@ -48,6 +58,10 @@ public class DetailFragment extends Fragment {
                 if(mListener != null)
                     mListener.itemAddCartClicked();
             });
+
+            TextView t = ((TextView)v.findViewById(R.id.gameOriginalPrice));
+            t.setPaintFlags(t.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
         }
     }
 

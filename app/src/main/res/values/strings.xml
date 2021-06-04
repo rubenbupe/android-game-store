@@ -44,4 +44,5 @@
     <string name="gallery">Gallery</string>
     <string name="camera">Camera</string>
     <string name="error">Error</string>
+    <string name="currency">€</string>
 </resources>

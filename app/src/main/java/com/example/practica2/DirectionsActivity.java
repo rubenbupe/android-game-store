@@ -99,7 +99,6 @@ public class DirectionsActivity extends AppCompatActivity {
             public void onMapReady(@NonNull GoogleMap googleMap) {
                 mGoogleMap = googleMap;
                 initMap();
-                getCurrentLocation();
             }
         });
         mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -154,6 +153,7 @@ public class DirectionsActivity extends AppCompatActivity {
             }
         }
         drawMarker(mStore);
+        getCurrentLocation();
         mGoogleMap.setMyLocationEnabled(true);
         mGoogleMap.getUiSettings().setMyLocationButtonEnabled(true);
         mGoogleMap.getUiSettings().setAllGesturesEnabled(true);
